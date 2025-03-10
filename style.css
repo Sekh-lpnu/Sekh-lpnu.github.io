@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /* Це дозволить враховувати padding та border в загальній ширині */
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -840,7 +844,7 @@ h1, h2, h3, h3, h4, h5, h6 {
 .footer__inner {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 150px;
     justify-content: center;
     align-items: center;
     background-color: #f8d216;
