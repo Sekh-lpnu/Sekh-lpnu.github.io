@@ -1,0 +1,1201 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+
+	background-color: #fff;
+}
+
+
+/* Стилі для контейнерів */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+/* Стиль для розділів "Доступні ініціативи", "Мої ініціативи" та "Про нас" */
+#initiatives, #my-initiatives, #about {
+    padding: 50px 0;
+}
+
+/* Стиль для основного контенту */
+.main-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #333;
+}
+
+/* Інші стилі залишаються такими ж, як і раніше */
+
+
+*,
+*:before,
+*:after  {
+	padding: 0;
+	margin: 0;
+}
+
+
+h1, h2, h3, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* Стилі для хедера */
+.header {
+    width: 100%;
+    height: 70px; /* Трішки більша висота для зручності */
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(3px); /* Додаємо розмиття для елегантності */
+    transition: background-color 0.3s ease; /* Плавний перехід кольору */
+    color: #000;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Вирівнює елементи по краях */
+    height: 100%;
+    padding: 0 20px;
+}
+
+/*////////////NAVIGATION*/
+
+
+.nav__link__logo {
+	margin: 0 25px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	text-transform: none;
+
+	color: #fff;
+	text-decoration: none;
+	opacity: .8;
+	transition: .4s;
+}
+
+.nav__link__logo:hover {
+	opacity: 1;
+}
+
+
+.nav {
+    margin: 0 25px;
+    display: flex;
+    justify-content: flex-end; /* Вирівнює посилання по правій стороні */
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.nav__link {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.nav__link1 {
+		text-decoration: none;
+		color: #000;
+        
+		opacity: .6;
+		transition: .2s;
+}
+
+
+
+
+.nav__link:hover {
+	text-decoration: none;
+    color: #fff;
+	opacity: 1;
+}
+
+
+
+.nav__link1:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+
+
+
+/* Основний контент */
+.main-content {
+    padding-top: 0px; /* Збільшуємо відступ, щоб контент не перекривався хедером */
+}
+
+/* Секція hero з фоновим зображенням */
+.hero {
+    height: 100vh;
+    background: url('Main2.jpg') no-repeat center center/cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Додаємо relative для правильного позиціювання псевдоелемента */
+}
+
+/* Додати затемнений фон */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Черне затемнення з прозорістю */
+    z-index: 1; /* Псевдоелемент буде знизу */
+}
+
+/* Контейнер для тексту */
+.text-container {
+    display: flex;
+    padding-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Це гарантує, що текст буде поверх затемнення */
+    z-index: 2; /* Текст буде відображатися поверх затемнення */
+}
+
+/* Заголовок */
+.mainhead {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px; /* Відстань між заголовком і підзаголовком */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Підзаголовок */
+.subheading {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Опис організації */
+.description {
+    font-size: 16px;
+    color: #fff; /* Змінено на чорний */
+    margin-top: 15px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+    }
+
+    .mainhead {
+        font-size: 32px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    
+
+    .main-content {
+        padding-top: 50px; 
+    }
+}
+
+
+
+/* Фото на головній сторінці */
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-between; /* Розподіляє фотографії рівномірно */
+    gap: 20px; /* Проміжок між фотографіями */
+    margin-top: 80px; /* Відступ від хедера, щоб фотографії не перекривалися */
+}
+
+.photo-gallery img {
+    width: 32%; /* Кожна фотографія займатиме 1/3 ширини контейнера */
+    height: auto; /* Автоматична висота, щоб зберегти пропорції */
+    object-fit: cover; /* Картинки покривають блоки, зберігаючи пропорції */
+    border-radius: 8px; /* Округлені кути */
+}
+
+
+
+/* Блок "Про нас" */
+#about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 20px;
+    border: 2px solid #f8d216; /* Товщина і колір рамки */
+    border-radius: 0px; /* Закруглення кутів */
+    display: inline-block; /* Робить рамку прямокутною */
+    box-sizing: border-box; /* Ураховує padding в ширині */
+    background-color: #f8d216;
+   
+}
+
+
+.details__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+/*///////////DETAILS///////*/
+
+.details {
+    display: flex;
+    flex-wrap: wrap; /* Виправлено на правильний синтаксис */
+    background-color: #f3f3f3;
+    height: auto; /* Висота буде адаптуватися під контент */
+    max-height: 1000px;
+}
+
+.details__inner {
+    max-width: 450px;
+    margin: 70px auto;
+    padding: 0 20px; /* Додано відступи для зручності */
+}
+
+.details__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px; /* Збільшено розмір шрифту для кращої видимості */
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 27.5px auto;
+    text-transform: uppercase;
+    color: #333b46;
+}
+
+.details__subtitle {
+    color: #81868e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Збільшено розмір шрифту для кращої читаємості */
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify; /* Розтягує текст по ширині */
+    margin: 0 auto 60px;
+    width: 100%; /* Застосовує ширину на весь екран */
+    max-width: 100%; /* Запобігає переповненню */
+    padding: 0 20px; /* Додає відступи з боків для комфортного читання */
+    box-sizing: border-box; /* Ураховує padding при обчисленні ширини */
+    word-wrap: break-word; /* Змусить текст переноситися, якщо не вміщується */
+    line-height: 1.6; /* Оптимізовано для кращої читабельності */
+}
+
+@media (max-width: 768px) {
+    .details__title {
+        font-size: 20px; /* Зменшено шрифт для мобільних пристроїв */
+        margin: 20px auto; /* Відступи на менших екранах */
+    }
+
+    .details__inner {
+        max-width: 100%; /* Розширення на 100% ширини екрану на мобільних пристроях */
+        margin: 20px auto; /* Відступи для мобільних пристроїв */
+    }
+
+    .details__subtitle {
+        font-size: 16px; /* Зменшено розмір шрифту на мобільних пристроях */
+        padding: 0 10px; /* Менші відступи на мобільних пристроях */
+    }
+}
+ 
+
+/* Стилі для нових вікон */
+.hidden {
+    display: none;
+}
+
+/* Перехід на основну сторінку через логотип */
+.nav__link__logo {
+    cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+    
+}
+ /* Для екранів шириною до 768px (планшети та мобільні пристрої) */
+@media (max-width: 768px) {
+    /* Хедер стає нижчим для економії простору */
+    .header {
+        height: 60px;
+    }
+
+    /* Заголовки зменшуються, щоб поміститися на екрані */
+    .mainhead {
+        font-size: 32px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    /* Фото в галереї стають вертикальними */
+    .photo-gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photo-gallery img {
+        width: 100%; /* Фото розтягуються на всю ширину */
+    }
+
+    /* Відступи для контенту */
+    .main-content {
+        padding-top: 50px;
+    }
+}
+
+/* Для екранів шириною до 480px (смартфони) */
+@media (max-width: 480px) {
+    /* Заголовки ще менші для компактності */
+    .mainhead {
+        font-size: 24px;
+    }
+
+    /* Підзаголовок також зменшується */
+    .subheading {
+        font-size: 18px;
+    }
+
+    /* Текст стає дрібнішим, але читабельним */
+    .details__subtitle {
+        font-size: 14px;
+    }
+
+    /* Контейнер займає всю ширину */
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/*///////////INNITIATIVES///////*/
+
+.init-container {
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+    /*background-color: #f0e9eb;*/
+    
+}
+.intro {
+    height: auto; /* Автоматична висота, щоб не обрізалося */
+    background: #111111  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Центрує вміст */
+    padding: 10px 20px; /* Зменшений верхній паддінг, додано бокові відступи */
+}
+
+.init-mainhead {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px; /* Трохи зменшений розмір */
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 15px; /* Додає відступ вниз */
+    color: #e7c518;
+}
+.init-intro__title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	line-height: 12px;
+	font-weight: 400;
+	color: #f5f5dc;
+    margin-left: 20px;
+	letter-spacing: 0.2em;
+
+	text-transform: uppercase;
+
+	margin: 50 auto 40px;
+    margin-bottom: 10px;
+}
+
+
+.init-subheading {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	line-height: 12px;
+	font-weight: 400;
+	color: #a0adf6;
+    text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+	margin: 0 auto 40px;
+    margin-bottom: 100px;
+}
+
+/* Контейнер з текстом та фотографією */
+.init__intro-container {
+    
+    display: flex; /* Використовуємо флексбокс для горизонтального розташування елементів */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    justify-content: space-between; /* Розподіляємо простір між елементами */
+    max-width: 100%; /* Зменшуємо ширину контейнера */
+    margin: 0 auto 50px; /* Центруємо контейнер і додаємо відступ знизу */
+    padding: 20px;
+    background-color: #f8d216;
+    border-radius: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90px;
+}
+
+
+/* Текстова частина */
+.init__intro-text {
+    font-family: 'Roboto', serif; /* Шрифт для елегантного вигляду */
+    width: 50%; /* Ширина текстового блоку */
+    font-size: 20px; /* Збільшено розмір тексту */
+    line-height: 1.8; /* Збільшено міжрядковий інтервал для кращої читабельності */
+    color: #000; /* Темно-сірий колір тексту для кращого контрасту */
+    padding: 25px;
+    background-color: #f7f7a2; /* Білий фон для текстового блоку */
+    border-radius: 5px;
+}
+
+
+
+/* Блок з фотографією */
+.init__intro-image {
+    width: 45%; /* Ширина фотографії */
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Відступи між елементами */
+.init__intro-container > * {
+    margin: 0 20px; /* Відступи між текстом та фотографією */
+}
+
+/* Для зображення, щоб воно не розтягувалося */
+.init__intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Сітка для карток */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fcfab5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    margin-left: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 5px;
+}
+
+.card__button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #07025b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.card__button:hover {
+    background-color: #5f68ea;
+}
+
+
+/* Адаптивність для секції INITIATIVES */
+
+/* Для планшетів та маленьких екранів */
+@media (max-width: 1024px) {
+    .init-mainhead {
+        font-size: 40px; /* Зменшений розмір заголовка */
+    }
+
+    .init-intro__title {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .init-subheading {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .init__intro-container {
+        flex-direction: column; /* Вертикальне розташування */
+        align-items: center;
+        padding: 15px;
+    }
+
+    .init__intro-text, .init__intro-image {
+        width: 90%; /* Елементи займають майже всю ширину */
+        margin: 10px 0;
+    }
+
+    .init__intro-text {
+        font-size: 18px;
+    }
+
+    .card__button {
+        width: 80%; /* Кнопка ширша на менших екранах */
+        margin-left: 10%;
+    }
+}
+
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+    .init-mainhead {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .init-intro__title {
+        font-size: 20px;
+        line-height: 16px;
+    }
+
+    .init-subheading {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .init__intro-container {
+        padding: 10px;
+    }
+
+    .init__intro-text {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 15px;
+    }
+
+    .init__intro-image {
+        width: 100%; /* Фото на всю ширину */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Одна картка в ряд */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card__button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+    .init-mainhead {
+        font-size: 24px;
+    }
+
+    .init-intro__title {
+        font-size: 18px;
+    }
+
+    .init-subheading {
+        font-size: 16px;
+        
+    }
+
+    .init__intro-text {
+        font-size: 14px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card__button {
+        width: 100%; /* Кнопка на всю ширину */
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+
+
+/*////////////// MY INITIATIVES////////*/
+
+/* Задній фон для секції "Мої ініціативи" */
+#my-initiatives {
+    background-color: #111111; /* Легкий фон для секції */
+    padding-top: 60px; /* Відступ зверху, щоб не перекривати хедер */
+    padding-bottom: 40px; /* Відступ знизу, щоб не перекривати футер */
+}
+
+/* Підпис "Ви приєдналися" */
+.joined__text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2961;
+    margin-top: 10px;
+}
+
+/* Стилі для заголовка "Мої ініціативи" */
+.about__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px; /* Трохи зменшений розмір */
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #e7c518;
+    /* Зменшено відступ, щоб заголовок не був занадто віддалений від тексту */
+}
+
+/* Опис секції */
+.about__description {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+    width: 80%;
+	line-height: 12px;
+	font-weight: 400;
+	color: #a0adf6;
+    text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 auto 40px;
+    margin-bottom: 100px;
+    line-height: 2;
+   
+    
+}
+
+/* Контейнер ініціатив */
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Щоб не перекривало футер і хедер */
+    box-sizing: border-box;
+}
+/* Стилі для кнопки додавання ініціативи */
+.add-initiative-btn-container {
+    text-align: center; /* Вирівнюємо кнопку по центру */
+    margin-top: 40px; /* Відступ зверху */
+    margin-bottom: 20px;
+    background-color: #111111;
+}
+
+.add-initiative-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #07025b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-initiative-btn:hover {
+    background-color: #5f68ea;
+}
+
+
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about__title {
+        font-size: 32px;
+    }
+    
+    .about__description {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/*//////////////FOOTER////////*/
+/* Стилі для футера */
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0e9eb;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer__text {
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer__inner .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Блок "Про нас" */
+#about {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 20px;
+    border: 2px solid #f8d216; /* Товщина і колір рамки */
+    border-radius: 0px; /* Закруглення кутів */
+    display: inline-block; /* Робить рамку прямокутною */
+    box-sizing: border-box; /* Ураховує padding в ширині */
+    background-color: #f8d216;
+   
+}
+
+
+.details__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+/*///// ПРО НАС 2*/
+/* Загальні стилі */
+
+
+/* Блок "Про нас" */
+#about2 {
+    background-color: #f8d216;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about2 h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 20px;
+    border: 2px solid #000; /* Товщина і колір рамки */
+    border-radius: 0px; /* Закруглення кутів */
+    display: inline-block; /* Робить рамку прямокутною */
+    box-sizing: border-box; /* Ураховує padding в ширині */
+    background-color: #f8d216;
+   
+}
+
+
+.details__subtitle2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* Блок "Команда" */
+.team {
+    padding: 60px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.team__title {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Bigshot One', sans-serif;
+}
+
+.team__members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__member {
+    background-color: #fdf8b5;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team__member:hover {
+    transform: translateY(-10px);
+}
+
+.team__member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team__info {
+    color: #333b46;
+}
+
+.team__name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.team__age, .team__position, .team__duration {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #81868e;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .details__subtitle {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .team__members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__member {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+.values {
+    padding: 50px 0;
+    background: #333;
+}
+
+.values__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.15em;
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+    padding-left: 20px;
+}
+
+.values__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.value__item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    border: 2px solid #000;
+}
+
+.value__item h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.value__item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.love {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.freedom {
+    background-color: #ffd32a;
+}
+
+.growth {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.responsibility {
+    background-color: #ffd32a;
+}
+
+.love-ukraine {
+    background-color: #ffd32a;
+    color: #000;
+}
+.unity {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.respect {
+    background-color: #ffd32a;
+    color: #000;
+}
+
+.initiative {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+
+
+/*//////////////INTRO////////*/
+
+
+
+.intro__inner {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.init-intro_text{
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.intro__down {
+    padding-top: 30px; /* Скоригований відступ, щоб уникнути зайвого простору */
+}
+
+.icon-down-open {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.icon-down-open:hover {
+    padding: 8px;
+    background-color: #74634c;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+    .intro {
+        padding: 60px 20px;
+    }
+
+    .init-intro__title {
+        font-size: 28px;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/*////////////////CONTENT////////////*/
+
+.content {
+
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+
+
+
+	width: 65%;
+	max-width: 1140px;
+
+
+}
+
+
+
+
+
+
+.about__subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #9a9ea5;
+
+	margin: 0px 0px 40px;
+}
+
