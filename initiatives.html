@@ -19,6 +19,7 @@
             <a href="initiatives.html" class="nav__link">Доступні ініціативи</a>
             <a href="my-initiatives.html" class="nav__link">Мої ініціативи</a>
             <a href="about.html" class="nav__link">Про нас</a>
+            <a href="login.html" class="nav__link">Увійти</a>
         </nav>
     </div>
 </header>
@@ -38,55 +39,17 @@
     </div>
         <h2 class="init-intro__title">Оберіть свою ініціативу</h2>
 
-        <div class="grid">
-            <div class="card">
-                <img src="1initiatives.jpg" alt="Прибирання парку" class="card__image">
-                <h3>Плетіння сіток для військових</h3>
-                <p>Дата: 10 березня</p>
-                <p>Місце: Центральний парк</p>
-                <p>Потрібно волонтерів: 15</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
-            <div class="card">
-                <img src="3initiatives.jpg" alt="Посадка дерев" class="card__image">
-                <h3>Мирний протест</h3>
-                <p>Дата: 12 березня</p>
-                <p>Місце: Сквер Дружби</p>
-                <p>Потрібно волонтерів: необмежено</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
-            <div class="card">
-                <img src="4initiatives.jpg" alt="Збір продуктів" class="card__image">
-                <h3>Збір продуктів для нужденних</h3>
-                <p>Дата: 15 березня</p>
-                <p>Місце: Волонтерський центр</p>
-                <p>Потрібно волонтерів: 10</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
-            <div class="card">
-                <img src="7initiatives.jpg" alt="День добрих справ" class="card__image">
-                <h3>Висадка дерев</h3>
-                <p>Дата: 20 березня</p>
-                <p>Місце: Центральний парк</p>
-                <p>Потрібно волонтерів: 20</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
-            <div class="card">
-                <img src="6initiatives.jpg" alt="Кроводача" class="card__image">
-                <h3>Прибирання сміття</h3>
-                <p>Дата: 22 березня</p>
-                <p>Місце: Центральний пляж</p>
-                <p>Потрібно волонтерів: 50</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
-            <div class="card">
-                <img src="5initiatives.jpg" alt="Допомога притулку" class="card__image">
-                <h3>Допомога притулку для тварин</h3>
-                <p>Дата: 25 березня</p>
-                <p>Місце: Притулок "Добрий друг"</p>
-                <p>Потрібно волонтерів: 12</p>
-                <button class="card__button">Приєднатися</button>
-            </div>
+         <!-- Додаємо випадаючий список -->
+         <div class="filter-container">
+            <select id="initiative-filter" class="filter-dropdown">
+                <option value="all">Показати усі ініціативи</option>
+                <option value="available">Показати доступні ініціативи</option>
+            </select>
+        </div>
+
+        <div id="initiatives-container" class="grid">
+            <!-- Ініціативи будуть додані через JavaScript -->
+        </div>
         </div>
     </div>
 </section>
@@ -98,6 +61,7 @@
         <p class="footer__text">Слідкуйте за нами в соцмережах: Facebook | Instagram | Twitter</p>
     </div>
 </footer>
+<script src="initiatives.js"></script>
 
 </body>
 </html>
