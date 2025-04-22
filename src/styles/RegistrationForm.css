@@ -1,0 +1,52 @@
+/* Стилі для реєстраційної форми */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif; /* Сучасний шрифт */
+  }
+  
+  .registration-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+  
+  .registration-form input {
+    padding: 10px;
+    border: 2px solid #fcd116; /* яскраво-жовтий */
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease;
+  }
+  
+  .registration-form input:focus {
+    border-color: #000;
+    outline: none;
+  }
+  
+  .registration-form button {
+    background-color: #000;
+    color: #fcd116;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .registration-form button:hover {
+    background-color: #fcd116;
+    color: #000;
+  }
+  

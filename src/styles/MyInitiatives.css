@@ -1,0 +1,181 @@
+/*////////////// MY INITIATIVES////////*/
+
+/* Задній фон для секції "Мої ініціативи" */
+#my-initiatives {
+    background-color: #111111; /* Легкий фон для секції */
+    padding-top: 60px; /* Відступ зверху, щоб не перекривати хедер */
+    padding-bottom: 40px; /* Відступ знизу, щоб не перекривати футер */
+}
+/* Обмежуємо ширину контейнера до 80% */
+#my-initiatives .container-myinit {
+    width:80%;
+    margin: 0 auto; /* Центруємо контейнер */
+}
+
+/* Додаємо відступ між картками */
+#my-initiatives .card {
+    margin-bottom: 20px; /* Відступ між картками по вертикалі */
+    margin-right: 20px; /* Відступ між картками по горизонталі */
+}
+
+/* Робимо картки гнучкими, щоб вони гарно вирівнювались */
+#my-initiatives .container-myinit {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє карткам переноситись на новий ряд */
+    justify-content: center; /* Центрує картки в контейнері */
+    gap: 20px; /* Відступ між картками */
+}
+
+/* Опціонально: Встановлюємо максимальну ширину карток */
+#my-initiatives .card {
+    max-width: 500px; /* Обмежуємо ширину картки */
+    flex: 1 1 calc(33.333% - 20px); /* Робимо картки рівномірного розміру */
+}
+
+#my-initiatives .card:hover {
+    transform: none !important;
+}
+
+.initiatives-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+/* Підпис "Ви приєдналися" */
+.joined__text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2961;
+    margin-top: 10px;
+}
+
+/* Стилі для заголовка "Мої ініціативи" */
+.about__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px; /* Трохи зменшений розмір */
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #e7c518;
+    /* Зменшено відступ, щоб заголовок не був занадто віддалений від тексту */
+}
+
+/* Опис секції */
+.about__description {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+    width: 80%;
+	line-height: 12px;
+	font-weight: 400;
+	color: #a0adf6;
+    text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 auto 40px;
+    margin-bottom: 100px;
+    line-height: 2;
+   
+    
+}
+
+/* Контейнер ініціатив */
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Щоб не перекривало футер і хедер */
+    box-sizing: border-box;
+}
+.remove-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #e53935; /* Червоний колір для видалення */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f; /* Темніший червоний при наведенні */
+    transform: scale(1.05); /* Легке збільшення кнопки при наведенні */
+}
+
+.remove-button:active {
+    background-color: #c62828; /* Темно-червоний при натисканні */
+    transform: scale(1); /* Повернення до початкового розміру */
+}
+
+/* Стилі для кнопки додавання ініціативи */
+.add-initiative-btn-container {
+    text-align: center; /* Вирівнюємо кнопку по центру */
+    margin-top: 40px; /* Відступ зверху */
+    margin-bottom: 20px;
+    background-color: #111111;
+}
+
+.add-initiative-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #07025b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-initiative-btn:hover {
+    background-color: #5f68ea;
+}
+
+/* ///////// НІЯКИХ ІНІЦІАТИВ - СТИЛІ ////////////////////// */
+
+.no-init {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #f63f3f;
+    margin-top: -60px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background-color: #1a1a1a;
+    padding: 20px 30px;
+    border-radius: 12px;
+    
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about__title {
+        font-size: 32px;
+    }
+    
+    .about__description {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

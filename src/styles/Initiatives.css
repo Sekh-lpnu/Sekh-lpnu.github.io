@@ -1,0 +1,437 @@
+/*///////////INNITIATIVES///////*/
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+    
+}
+
+.init-container {
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+    
+    
+}
+.intro {
+    height: auto; /* Автоматична висота, щоб не обрізалося */
+    background: #111111  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Центрує вміст */
+    padding: 10px 20px; /* Зменшений верхній паддінг, додано бокові відступи */
+}
+
+.init-mainhead {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px; /* Трохи зменшений розмір */
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 15px; /* Додає відступ вниз */
+    color: #e7c518;
+}
+.init-intro__title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	line-height: 12px;
+	font-weight: 400;
+	color: #f5f5dc;
+    margin-left: 20px;
+	letter-spacing: 0.2em;
+
+	text-transform: uppercase;
+
+	margin: 50 auto 40px;
+    margin-bottom: 10px;
+}
+
+
+.init-subheading {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #a0adf6;
+    text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+	margin: 0 auto 40px;
+    margin-bottom: 100px;
+}
+
+/* Контейнер з текстом та фотографією */
+.init__intro-container {
+    
+    display: flex; /* Використовуємо флексбокс для горизонтального розташування елементів */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    justify-content: space-between; /* Розподіляємо простір між елементами */
+    max-width: 100%; /* Зменшуємо ширину контейнера */
+    margin: 0 auto 50px; /* Центруємо контейнер і додаємо відступ знизу */
+    padding: 20px;
+    background-color: #f8d216;
+    border-radius: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90px;
+}
+
+
+/* Текстова частина */
+.init__intro-text {
+    font-family: 'Roboto', serif; /* Шрифт для елегантного вигляду */
+    width: 50%; /* Ширина текстового блоку */
+    font-size: 20px; /* Збільшено розмір тексту */
+    line-height: 1.8; /* Збільшено міжрядковий інтервал для кращої читабельності */
+    color: #000; /* Темно-сірий колір тексту для кращого контрасту */
+    padding: 25px;
+    background-color: #f7f7a2; /* Білий фон для текстового блоку */
+    border-radius: 5px;
+}
+
+
+
+/* Блок з фотографією */
+.init__intro-image {
+    width: 45%; /* Ширина фотографії */
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Відступи між елементами */
+.init__intro-container > * {
+    margin: 0 20px; /* Відступи між текстом та фотографією */
+}
+
+/* Для зображення, щоб воно не розтягувалося */
+.init__intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Сітка для карток */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fcfab5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    margin-left: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 5px;
+}
+
+.card__button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #07025b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.card__button:hover {
+    background-color: #5f68ea;
+}
+
+/* Стиль для контейнера випадаючого списку */
+.filter-container {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 20px; /* Додаємо відступ зверху */
+}
+
+/* Стиль для випадаючого списку */
+.filter-dropdown {
+    padding: 10px 15px; /* Додаємо більше відступів для комфортного вигляду */
+    font-size: 16px; /* Збільшуємо шрифт */
+    border: 2px solid #ffc107; /* Жовтий колір для рамки */
+    border-radius: 5px; /* Заокруглення країв */
+    background-color: #333; /* Темний фон */
+    color: #ffc107; /* Жовтий текст */
+    appearance: none; /* Видаляємо стандартні стрілки браузера */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Стиль для стрілки */
+.filter-dropdown::-ms-expand {
+    display: none;
+}
+
+/* Стиль при фокусуванні */
+.filter-dropdown:focus {
+    border-color: #ff6f00; /* Світліший жовтий при фокусуванні */
+    outline: none; /* Видаляємо стандартне оточення */
+ 
+    
+}
+
+
+/* Стилі для кнопки на мобільних пристроях */
+@media (max-width: 768px) {
+    .filter-button {
+        width: 100%; /* кнопка займає всю ширину на мобільних */
+        padding: 14px 0; /* збільшені відступи для мобільних */
+    }
+}
+
+.card__button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* Адаптивність для секції INITIATIVES */
+
+/* Для планшетів та маленьких екранів */
+@media (max-width: 1024px) {
+    .init-mainhead {
+        font-size: 40px; /* Зменшений розмір заголовка */
+    }
+
+    .init-intro__title {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .init-subheading {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .init__intro-container {
+        flex-direction: column; /* Вертикальне розташування */
+        align-items: center;
+        padding: 15px;
+    }
+
+    .init__intro-text, .init__intro-image {
+        width: 90%; /* Елементи займають майже всю ширину */
+        margin: 10px 0;
+    }
+
+    .init__intro-text {
+        font-size: 18px;
+    }
+
+    .card__button {
+        width: 80%; /* Кнопка ширша на менших екранах */
+        margin-left: 10%;
+    }
+}
+
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+    .init-mainhead {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .init-intro__title {
+        font-size: 20px;
+        line-height: 16px;
+    }
+
+    .init-subheading {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .init__intro-container {
+        padding: 10px;
+    }
+
+    .init__intro-text {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 15px;
+    }
+
+    .init__intro-image {
+        width: 100%; /* Фото на всю ширину */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Одна картка в ряд */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card__button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+    .init-mainhead {
+        font-size: 24px;
+    }
+
+    .init-intro__title {
+        font-size: 18px;
+    }
+
+    .init-subheading {
+        font-size: 16px;
+        
+    }
+
+    .init__intro-text {
+        font-size: 14px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card__button {
+        width: 100%; /* Кнопка на всю ширину */
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+/* Модальне затемнення */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.8); /* напівпрозорий чорний */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Вікно модального */
+  .modal {
+    background-color: #fff;
+    color: #1a1a1a;
+    border: 3px solid #fcd116;
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .modal p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .modal button {
+    background-color: #000;
+    color: #fcd116;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal button:hover {
+    background-color: #fcd116;
+    color: #000;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  .rating {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 34px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #ffd700; /* Золотистий колір для заповненої зірки */
+}
+
+.star:hover {
+    color: #ff9900; /* Трохи яскравіший колір при наведенні */
+}

@@ -1,0 +1,26 @@
+/*//////////////FOOTER////////*/
+/* Стилі для футера */
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d216;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer__text {
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer__inner .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}

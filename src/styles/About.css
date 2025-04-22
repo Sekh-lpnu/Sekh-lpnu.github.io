@@ -1,0 +1,242 @@
+/* Блок "Про нас" */
+#about {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 20px;
+    border: 2px solid #f8d216; /* Товщина і колір рамки */
+    border-radius: 0px; /* Закруглення кутів */
+    display: inline-block; /* Робить рамку прямокутною */
+    box-sizing: border-box; /* Ураховує padding в ширині */
+    background-color: #f8d216;
+   
+}
+
+
+.details__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+/*///// ПРО НАС 2*/
+/* Загальні стилі */
+
+
+/* Блок "Про нас" */
+#about2 {
+    background-color: #f8d216;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about2 h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 20px;
+    border: 2px solid #000; /* Товщина і колір рамки */
+    border-radius: 0px; /* Закруглення кутів */
+    display: inline-block; /* Робить рамку прямокутною */
+    box-sizing: border-box; /* Ураховує padding в ширині */
+    background-color: #f8d216;
+   
+}
+
+
+.details__subtitle2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* Блок "Команда" */
+.team {
+    padding: 60px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.team__title {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Bigshot One', sans-serif;
+}
+
+.team__members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__member {
+    background-color: #fdf8b5;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team__member:hover {
+    transform: translateY(-10px);
+}
+
+.team__member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team__info {
+    color: #333b46;
+}
+
+.team__name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.team__age, .team__position, .team__duration {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #81868e;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .details__subtitle {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .team__members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__member {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+.values {
+    padding: 50px 0;
+    background: #333;
+}
+
+.values__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.15em;
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+    padding-left: 20px;
+}
+
+.values__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.value__item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    border: 2px solid #000;
+}
+
+.value__item h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.value__item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.love {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.freedom {
+    background-color: #ffd32a;
+}
+
+.growth {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.responsibility {
+    background-color: #ffd32a;
+}
+
+.love-ukraine {
+    background-color: #ffd32a;
+    color: #000;
+}
+.unity {
+    background-color: #4d8cf5;
+    color: #fff;
+}
+
+.respect {
+    background-color: #ffd32a;
+    color: #000;
+}
+
+.initiative {
+    background-color: #4d8cf5;
+    color: #fff;
+}
